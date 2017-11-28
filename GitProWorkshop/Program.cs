@@ -26,9 +26,9 @@ namespace GitProWorkshop
             Console.WriteLine("Greetings");
         }
 
-        public void New()
+        public void New(string input1, string input2)
         {
-            Console.WriteLine("konfliktus!");
+            Console.WriteLine($"{input1}, {input2}");
         }
     }
 }
