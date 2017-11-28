@@ -23,9 +23,9 @@ namespace GitProWorkshop
 
         public void Greet(string name)
         {
-            Console.WriteLine("hey " + name + "!");
-        }   
-        
+            Console.WriteLine("Greetings");
+        }
+
         public void New()
         {
             Console.WriteLine("konfliktus!");
