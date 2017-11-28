@@ -21,9 +21,9 @@ namespace GitProWorkshop
             Console.WriteLine("szisarp");
         }
 
-        public void Greet(string name)
+        public void Greet(string firstname, string lastname)
         {
-            Console.WriteLine("Greetings");
+            Console.WriteLine("hey " + firstname + lastname);
         }
 
         public void New()
