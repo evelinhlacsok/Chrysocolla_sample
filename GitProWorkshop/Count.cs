@@ -7,9 +7,10 @@ namespace GitProWorkshop
 {
     public class Count
     {
-        public static void CountAge(int age)
+        public static void CountMonth(int month)
         {
-            Console.WriteLine("ez a korod: " + age);
+            month = 10;
+            Console.WriteLine("birth month: " + month);
         }
     }
 }
