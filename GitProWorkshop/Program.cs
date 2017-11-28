@@ -24,11 +24,6 @@ namespace GitProWorkshop
         public void Greet(string name)
         {
             Console.WriteLine("hey " + name + "!");
-        }
-
-        public static void Count()
-        {
-            Console.WriteLine("26");
-        }
+        }        
     }
 }
