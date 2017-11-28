@@ -20,5 +20,10 @@ namespace GitProWorkshop
         {
             Console.WriteLine("Proz");
         }
+
+        public void Greet()
+        {
+            Console.WriteLine("hey evi!");
+        }
     }
 }
