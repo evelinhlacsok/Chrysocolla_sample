@@ -14,8 +14,8 @@ namespace GitProWorkshop
     {
         public static void Main(string[] args)
         {
-           
         }
+
         public void Cheer()
         {
             Console.WriteLine("Proz");
@@ -24,6 +24,11 @@ namespace GitProWorkshop
         public void Greet()
         {
             Console.WriteLine("hey evi!");
+        }
+
+        public static void Count()
+        {
+            Console.WriteLine("26");
         }
     }
 }
