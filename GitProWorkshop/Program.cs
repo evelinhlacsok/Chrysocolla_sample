@@ -21,9 +21,9 @@ namespace GitProWorkshop
             Console.WriteLine("Proz");
         }
 
-        public void Greet()
+        public void Greet(string name)
         {
-            Console.WriteLine("hey evi!");
+            Console.WriteLine("hey " + name + "!");
         }
 
         public static void Count()
