@@ -16,9 +16,9 @@ namespace GitProWorkshop
         {
         }
 
-        public void Cheer()
+        public void Cheer(string input)
         {
-            Console.WriteLine("Proz");
+            Console.WriteLine(input);
         }
 
         public void Greet(string name)
