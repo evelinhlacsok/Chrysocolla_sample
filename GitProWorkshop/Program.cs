@@ -14,6 +14,7 @@ namespace GitProWorkshop
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("melyik legyen felülírva?");
         }
 
         public void Cheer(string input)
