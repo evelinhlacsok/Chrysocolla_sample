@@ -14,11 +14,7 @@ namespace GitProWorkshop
     {
         public static void Main(string[] args)
         {
-            Cheer("");
-            Greet("");
-            NewMethod("", "");
-            Console.WriteLine("melyik legyen felülírva? - egyik se!");
-            Console.WriteLine("el kéne tűnnie a csilla branchnek");
+            CheerAndGreet("Csicsi");
         }
 
         public static void Cheer(string input)
