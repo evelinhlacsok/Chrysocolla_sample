@@ -14,11 +14,12 @@ namespace GitProWorkshop
     {
         public static void Main(string[] args)
         {
+            CheerAndGreet("Csicsi");
         }
 
-        public void Cheer(string input)
+        public static void Cheer(string name)
         {
-            Console.WriteLine("szisarp");
+            Console.WriteLine($"{name}'s language is szisarp.");
         }
 
         public void Greet(string firstname, string lastname)
@@ -26,9 +27,21 @@ namespace GitProWorkshop
             Console.WriteLine("hey " + firstname + lastname);
         }
 
-        public void New()
+        public static void Greeting(string name)
         {
-            Console.WriteLine("konfliktus!");
+            Console.WriteLine($"Greetings, {name}!");
+        }
+
+        public static void NewMethod(string input1, string input2)
+        {
+            Console.WriteLine($"{input1}, {input2}");
+        }
+
+        public static void CheerAndGreet(string name)
+        {
+            name = name.ToUpper();
+            Cheer(name);
+            Greeting(name);
         }
     }
 }
