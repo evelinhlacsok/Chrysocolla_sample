@@ -21,9 +21,9 @@ namespace GitProWorkshop
             Console.WriteLine("el kéne tűnnie a csilla branchnek");
         }
 
-        public static void Cheer(string input)
+        public static void Cheer(string name)
         {
-            Console.WriteLine("szisarp");
+            Console.WriteLine($"{name}'s language is szisarp.");
         }
 
         public static void Greet(string name)
