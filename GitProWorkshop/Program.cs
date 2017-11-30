@@ -15,6 +15,7 @@ namespace GitProWorkshop
         public static void Main(string[] args)
         {
             CheerAndGreet("Csicsi");
+            Boost("csicsi", "nice");
         }
 
         public static void Cheer(string name)
@@ -36,6 +37,11 @@ namespace GitProWorkshop
         {
             Console.WriteLine($"{input1}, {input2}");
         }
+
+		public static void Boost(string name, string niceWord)
+		{
+			Console.WriteLine($"you {name} are {niceWord}");
+		}
 
         public static void CheerAndGreet(string name)
         {
