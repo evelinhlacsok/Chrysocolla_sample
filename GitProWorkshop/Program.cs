@@ -36,6 +36,11 @@ namespace GitProWorkshop
             Console.WriteLine($"{input1}, {input2}");
         }
 
-
+        public static void CheerAndGreet(string name)
+        {
+            name = name.ToUpper();
+            Cheer(name);
+            Greet(name);
+        }
     }
 }
