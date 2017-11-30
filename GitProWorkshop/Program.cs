@@ -14,21 +14,26 @@ namespace GitProWorkshop
     {
         public static void Main(string[] args)
         {
+            Cheer("");
+            Greet("");
+            NewMethod("", "");
         }
 
-        public void Cheer(string input)
+        public static void Cheer(string input)
         {
             Console.WriteLine("szisarp");
         }
 
-        public void Greet(string name)
+        public static void Greet(string name)
         {
             Console.WriteLine("Greetings");
         }
 
-        public void New(string input1, string input2)
+        public static void NewMethod(string input1, string input2)
         {
             Console.WriteLine($"{input1}, {input2}");
         }
+
+
     }
 }
