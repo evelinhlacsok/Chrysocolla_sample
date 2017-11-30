@@ -14,11 +14,7 @@ namespace GitProWorkshop
     {
         public static void Main(string[] args)
         {
-            Cheer("");
-            Greet("");
-            NewMethod("", "");
-            Console.WriteLine("melyik legyen felülírva? - egyik se!");
-            Console.WriteLine("el kéne tűnnie a csilla branchnek");
+            CheerAndGreet("Csicsi");
         }
 
         public static void Cheer(string name)
@@ -36,6 +32,11 @@ namespace GitProWorkshop
             Console.WriteLine($"{input1}, {input2}");
         }
 
-
+        public static void CheerAndGreet(string name)
+        {
+            name = name.ToUpper();
+            Cheer(name);
+            Greet(name);
+        }
     }
 }
