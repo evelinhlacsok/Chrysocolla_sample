@@ -28,7 +28,7 @@ namespace GitProWorkshop
 
         public static void Greet(string name)
         {
-            Console.WriteLine("Greetings");
+            Console.WriteLine($"Greetings, {name}!");
         }
 
         public static void NewMethod(string input1, string input2)
