@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using GitProWorkshop.Models;
 using Microsoft.EntityFrameworkCore;
+using GitProWorkshop.Entities;
+using Microsoft.EntityFrameworkCore.Design;
+using GitProWorkshop.Repositories;
 
 namespace GitProWorkshop
 {
@@ -15,6 +18,13 @@ namespace GitProWorkshop
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=GitProWorkshop;Trusted_Connection=True;ConnectRetryCount=0";
+            services.AddDbContext<WorkshopContext>(options => options.UseSqlite(connection));
+            services.AddScoped<WorkshopContext>();
+            services.AddScoped<WorkshopRepository>();
+            
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

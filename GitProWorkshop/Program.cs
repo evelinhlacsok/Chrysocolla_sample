@@ -7,6 +7,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using GitProWorkshop.Repositories;
+using GitProWorkshop.Entities;
 
 namespace GitProWorkshop
 {
@@ -14,6 +16,8 @@ namespace GitProWorkshop
     {
         public static void Main(string[] args)
         {
+            var context = new WorkshopContext(); 
+            WorkshopRepository.AddSomething();
             CheerAndGreet("Csicsi");
             Boost("csicsi", "nice");
         }

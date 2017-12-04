@@ -7,8 +7,8 @@ namespace GitProWorkshop.Models
 {
     public class Praise
     {
-        string firstAdjective;
-        string secondAdjective;
-        int multiply;
+        public string firstAdjective;
+        public string secondAdjective;
+        public int multiply;
     }
 }
